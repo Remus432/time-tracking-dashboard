@@ -1,0 +1,82 @@
+.activity
+  border-radius: 1.5rem
+  margin-top: 2rem
+
+  &__label
+    padding: 2.5rem 1.5rem
+    background-repeat: no-repeat
+    background-position: 95% 30%
+
+    &-img
+      display: none
+
+  &__card
+    background-color: $card-bg
+    border-radius: 1.3rem
+    position: relative
+    padding: 2.5rem 2rem
+    z-index: 2
+
+  &__name
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    & span
+      font-weight: 500
+      color: #fff
+
+    & img
+      cursor: pointer
+
+  &__time
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 1rem
+
+    &-current
+      font-weight: 300
+      color: #fff
+      font-size: 3.2rem
+
+    &-previous
+      color: $text
+      font-weight: 400
+      font-size: 1.5rem
+
+#work
+  background-color: $work-bg
+
+  & .activity__label
+    background-image: url("/images/icon-work.svg")
+    
+#play
+  background-color: $play-bg
+
+  & .activity__label
+    background-image: url("/images/icon-play.svg")
+
+#study
+  background-color: $study-bg
+
+  & .activity__label
+    background-image: url("/images/icon-study.svg")
+
+#exercise
+  background-color: $exercise-bg
+
+  & .activity__label
+    background-image: url("/images/icon-exercise.svg")
+
+#social
+  background-color: $social-bg
+
+  & .activity__label
+    background-image: url("/images/icon-social.svg")
+
+#self-care
+  background-color: $self-care-bg
+
+  & .activity__label
+    background-image: url("/images/icon-self-care.svg")

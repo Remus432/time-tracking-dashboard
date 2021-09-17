@@ -1,0 +1,40 @@
+.report
+  border-radius: 1.5rem
+  background-color: $card-bg
+  display: flex
+  flex-direction: column
+
+  &__timeframe
+    display: flex
+    justify-content: space-between
+    height: 100%
+    padding: 2rem 2.5rem
+
+    &-value
+      color: $report-text
+      cursor: pointer
+      margin: .8rem 0
+
+      &:hover
+        color: #fff
+
+  &__user
+    background-color: $report-bg
+    border-radius: 15px
+    display: flex
+    align-items: center
+    padding: 2.5rem
+
+    &-info
+      margin-left: 2rem
+
+      &-label
+        font-size: 1.5rem
+        color: $text
+      
+      &-name
+        color: #fff
+        font-size: 2.4rem
+    
+    &-pic
+      width: 64px

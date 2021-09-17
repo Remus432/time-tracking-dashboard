@@ -1,26 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <Report/>
+  <Activities />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Report from "./components/Report"
+  import Activities from "./components/Activities"
+  import { provide } from "vue"
+  import store from "@/store"
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+    components: {
+      Report,
+      Activities
+    },
+    setup() {
+      provide("store", store)
+
+      return {
+        store
+      }
+    }
   }
-}
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="sass" >
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap')
+  @import "@/styles/_variables.sass"
+  @import "@/styles/_global.sass"
+  @import "@/styles/_report.sass"
+  @import "@/styles/_activities.sass"
+  @import "@/styles/_activity.sass"
+  @import "@/styles/_queries.sass"
+  
 </style>
