@@ -1,7 +1,7 @@
 <template>
   <article class="activity">
     <div class="activity__label">
-      <img :src="`/images/icon-${icon}.svg`" class="activity__label-img" />
+      <img :src="`/images/icon-${icon}.svg`" :alt="icon" class="activity__label-img" />
     </div>
     <div class="activity__card">
       <div class="activity__name">
@@ -9,7 +9,7 @@
         <img src="/images/icon-ellipsis.svg" />
       </div>  
       <div class="activity__time">
-        <p class="activity__time-current">{{ currTimeframe }}hrs</p>
+        <h2 class="activity__time-current">{{ currTimeframe }}hrs</h2>
         <p class="activity__time-previous">{{ prevTime }} - {{ previousTimeframe }}hrs</p>
       </div>
     </div>
