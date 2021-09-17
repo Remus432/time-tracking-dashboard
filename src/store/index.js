@@ -3,7 +3,7 @@ import defaultData from "../data.json"
 
 const state = reactive({
   activities: [],
-  currTimeframe: "daily",
+  currTimeframe: "weekly",
   previousTime: "Yesterday"
 })
 
