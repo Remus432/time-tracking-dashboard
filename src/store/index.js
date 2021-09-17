@@ -4,7 +4,7 @@ import defaultData from "../data.json"
 const state = reactive({
   activities: [],
   currTimeframe: "weekly",
-  previousTime: "Yesterday"
+  previousTime: "Last Week"
 })
 
 const methods = {
