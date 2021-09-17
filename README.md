@@ -7,8 +7,7 @@
 
 Today's challenge was building the Junior level project **"Time Tracking Dashboard"**
 
-[Live Site](https://github-user-search-lime.vercel.app/)
-
+[Live Site](https://time-tracking-dashboard-nu.vercel.app/)
 ## Technologies Used
 
 * **HTML5**
